@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<div th:if="${user == null}">
+    <a href="#" onclick="location.href='/oauth2/authorization/google'">Login with Google</a>
+</div>
+
+<div th:if="${user != null}">
+    <p>ID: <span th:text="${user.id}"></span></p>
+    <p>Username: <span th:text="${user.username}"></span></p>
+    <p>Email: <span th:text="${user.email}"></span></p>
+    <p><img th:src="${user.picture}" alt="Profile Picture" /></p>
+    <a href="/logout">Logout</a>
+</div>
+</body>
+</html>
