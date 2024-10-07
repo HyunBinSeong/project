@@ -5,7 +5,7 @@ oauth2나 keystore등등 비밀번호나 코드들은 직접 입력하셔야 합
 
 spring.application.name=my
 
-#openssl ??(https? ??? ?? ?? ??)
+#openssl 
 server.port=8443
 server.ssl.enabled=true
 server.ssl.key-store-type=PKCS12
@@ -13,7 +13,7 @@ server.ssl.key-store=classpath:keystore.p12
 server.ssl.key-store-password= "your password"
 server.ssl.key-alias= "your key-alias"
 
-# OAuth2 ??
+# OAuth2 
 spring.security.oauth2.client.registration.google.client-id= "your google oauth2 id"
 spring.security.oauth2.client.registration.google.client-secret= "your google oauth2 secret"
 spring.security.oauth2.client.registration.google.scope=email,profile
@@ -23,12 +23,12 @@ spring.security.oauth2.client.provider.google.user-info-uri=https://www.googleap
 spring.security.oauth2.client.provider.google.jwk-set-uri=https://www.googleapis.com/oauth2/v3/certs
 spring.security.oauth2.client.provider.google.user-name-attribute=sub
 
-# JWT ??
+# JWT
 spring.jwt.secret-key= "your jwt password"
 spring.jwt.token-validity=600000  
 spring.jwt.refresh-token-validity=600000
 
-# JPA ? ?????? ??
+# JPA 
 spring.jpa.hibernate.ddl-auto=update
 spring.datasource.url=jdbc:h2:mem:testdb
 spring.datasource.driverClassName=org.h2.Driver
@@ -36,7 +36,7 @@ spring.datasource.username=sa
 spring.datasource.password=1234
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.H2Dialect
 
-# H2 ?? ??? (??? ??)
+# H2
 spring.h2.console.enabled=true
 spring.h2.console.path=/h2-console
 spring.config.import=optional:configserver:
