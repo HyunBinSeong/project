@@ -8,6 +8,7 @@ token과 refreshtoken이 소멸처리 하는 것 까지만 구현되어 있습�
 아래는 application.properties의 내용입니다.
 oauth2나 keystore등등 비밀번호나 코드들은 직접 입력하셔야 합니다.
 
+# application.properties
 spring.application.name=my
 
 # openssl 
