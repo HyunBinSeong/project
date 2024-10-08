@@ -23,11 +23,11 @@ server.ssl.key-alias= "your key-alias"
 spring.security.oauth2.client.registration.google.client-id= "your google oauth2 id"
 spring.security.oauth2.client.registration.google.client-secret= "your google oauth2 secret"
 spring.security.oauth2.client.registration.google.scope=email,profile
-spring.security.oauth2.client.provider.google.authorization-uri=https://accounts.google.com/o/oauth2/v2/auth
-spring.security.oauth2.client.provider.google.token-uri=https://www.googleapis.com/oauth2/v4/token
-spring.security.oauth2.client.provider.google.user-info-uri=https://www.googleapis.com/oauth2/v3/userinfo
-spring.security.oauth2.client.provider.google.jwk-set-uri=https://www.googleapis.com/oauth2/v3/certs
-spring.security.oauth2.client.provider.google.user-name-attribute=sub
+spring.security.oauth2.client.provider.google.authorization-uri=
+spring.security.oauth2.client.provider.google.token-uri=
+spring.security.oauth2.client.provider.google.user-info-uri=
+spring.security.oauth2.client.provider.google.jwk-set-uri=
+spring.security.oauth2.client.provider.google.user-name-attribute=
 
 # JWT
 spring.jwt.secret-key= "your jwt password"
